@@ -1,6 +1,6 @@
 # optional to enable smooth scrolling to the navigation links    
 
-document.addEventListener('DOMContentLoaded', () => {
+#document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('nav ul li a');
     
     for (const link of navLinks) {
