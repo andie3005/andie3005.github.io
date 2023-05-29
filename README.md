@@ -8,7 +8,7 @@ Website attempt #n
   
 ### Optional to enable smooth scrolling to the navigation links (script.js)    
 ```
-`document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('nav ul li a');
     
     for (const link of navLinks) {
@@ -19,5 +19,5 @@ Website attempt #n
             targetElement.scrollIntoView({ behavior: 'smooth' });
         });
     }
-});`
+});
 ```
