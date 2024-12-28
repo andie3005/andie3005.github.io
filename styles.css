@@ -51,7 +51,7 @@ section h2 {
 }
 
 /* Enlarge and underline the <h2> text inside <section> on hover */
-section h2:hover {
+section h2 a:hover {
     transform: scale(1.1); /* Enlarge the header text slightly on hover */
     text-decoration: underline; /* Underline the text on hover */
     transition: transform 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
