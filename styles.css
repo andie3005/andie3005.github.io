@@ -9,6 +9,19 @@ header {
     padding: 20px; /* Add 20px padding inside the header */
 }
 
+/* Remove underline from header links by default */
+header nav ul li a {
+    text-decoration: none; /* Remove underline from the links */
+    color: inherit; /* Keep the default color */
+}
+
+/* Enlarge and underline the navigation links (<a>) inside <header> on hover */
+header nav ul li a:hover {
+    transform: scale(1.1); /* Enlarge the link text slightly on hover */
+    text-decoration: underline; /* Underline the text on hover */
+    transition: transform 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
 /* Main heading (h1) styling */
 h1 {
     text-align: center; /* Center the main heading text */
@@ -28,7 +41,6 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove underline from the links */
     color: inherit; /* Inherit the color from the surrounding text (will use default color) */
     transition: transform 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
 }
@@ -45,6 +57,14 @@ section {
 
 section h2 {
     text-align: center; /* Center the subheading text */
+    /*text-decoration: none; /* Ensure no underline by default */
+}
+
+/* Enlarge and underline the <h2> text inside <section> on hover */
+section h2:hover {
+    transform: scale(1.1); /* Enlarge the header text slightly on hover */
+    text-decoration: underline; /* Underline the text on hover */
+    transition: transform 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
 }
 
 /* General link styling */
