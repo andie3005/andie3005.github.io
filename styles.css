@@ -29,6 +29,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none; /* Remove underline from the links */
+    color: inherit; /* Inherit the color from the surrounding text (will use default color) */
 }
 
 /* Section styling */
