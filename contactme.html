@@ -1,90 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Francesca Bellia - My Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Andrea Francesca Bellia</h1>
-        <nav>
-            <ul>
-                <li><a href="https://andie3005.github.io">Home</a></li>
-                <li><a href="https://andie3005.github.io/about">About Me</a></li>
-                <li><a href="https://andie3005.github.io/cv">CV</a></li>
-                <li><a href="https://andie3005.github.io/portfolio">Portfolio</a></li>
-                <li><a href="https://andie3005.github.io/contactme">Contact Me</a></li>              
-            </ul>
-        </nav>
-    </header>
+    <div id="header-container"></div>
 
+    
 <section>
       <p>Apart from the social media buttons/links below, feel free to reach out to me using your preferred method of choice from the contact information below:</p>
   <ul class="contact-info">
-    <li><strong>Email:</strong> example@example.com</li>
-    <li><strong>Phone:</strong> 123-456-7890</li>
-    <li><strong>Address:</strong> 123 Main Street, City, Country</li>
+    <li><strong>Email:</strong> name@gmail.com</li>
+    <li><strong>Phone:</strong> +356 XXXX XXXX</li>
+    <li><strong>Address:</strong> no., Street, City, Malta</li>
   </ul>
 </section>
         
-</section>
-    
-    <style>
-        .social-media-icons {
-            list-style: none; /* Remove bullet points */
-            display: flex; /* Display icons horizontally */
-            justify-content: center; /* Center icons horizontally */
-            gap: 10px; /* Add spacing between icons */
-        }
-
-        .social-media-icons li {
-            display: inline-block; /* Display icons inline */
-        }
-    </style>
-
-    <ul class="social-media-icons">
-    <li>
-        <a href="https://www.facebook.com/andrea.bellia.04" target="_blank" rel="noopener noreferrer">
-            <img src="https://andie3005.github.io/icon/facebook.png" alt="Facebook">
-        </a>
-    </li>
-    <li>
-        <a href="https://www.instagram.com/bioblitz04/" target="_blank" rel="noopener noreferrer">
-            <img src="https://andie3005.github.io/icon/instagram.png" alt="Instagram">
-        </a>
-    </li>
-    <li>
-        <a href="https://twitter.com/andie3005" target="_blank" rel="noopener noreferrer">
-            <img src="https://andie3005.github.io/icon/twitter.png" alt="Twitter">
-        </a>
-    </li>
-    <li>
-        <a href="https://www.linkedin.com/in/andrea-francesca-bellia-2ba765199/" target="_blank" rel="noopener noreferrer">
-            <img src="https://andie3005.github.io/icon/linkedin.png" alt="LinkedIn">
-        </a>
-    </li>
-    <li>
-        <a href="https://www.researchgate.net/profile/Andrea-Bellia" target="_blank" rel="noopener noreferrer">
-            <img src="https://andie3005.github.io/icon/researchgate.png" alt="ResearchGate">
-        </a>
-    </li>
-    <li>
-        <a href="https://scholar.google.com/citations?user=lPxf8mYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-            <img src="https://andie3005.github.io/icon/googlescholar.png" alt="GoogleScholar">
-        </a>
-    </li>
-    <li>
-        <a href="https://github.com/andie3005" target="_blank" rel="noopener noreferrer">
-            <img src="https://andie3005.github.io/icon/github.png" alt="GitHub">
-        </a>
-    </li>
-    <li>
-        <a href="https://wa.me/your-phone-number" target="_blank" rel="noopener noreferrer">
-            <img src="https://andie3005.github.io/icon/whatsapp.png" alt="WhatsApp">
-        </a>
-    </li>
-</ul>
+ <div id="footer-container"></div>
 
     <script src="script.js"></script>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
