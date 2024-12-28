@@ -51,10 +51,16 @@ section h2 {
 }
 
 /* Enlarge and underline the <h2> text inside <section> on hover */
+section h2 a {
+    display: inline-block; /* Ensure the link can be transformed */
+    text-decoration: none; /* Remove underline by default */
+    color: inherit; /* Use the inherited text color */
+    transition: transform 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
 section h2 a:hover {
     transform: scale(1.1); /* Enlarge the header text slightly on hover */
     text-decoration: underline; /* Underline the text on hover */
-    transition: transform 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
 }
 
 /* Visited link styling */
@@ -94,6 +100,7 @@ a:visited {
     text-decoration: none; /* Remove underline from the link */
     border-radius: 5px; /* Rounded corners for the button */
     font-size: 1.1rem; /* Slightly larger text size */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Add smooth transitions */
 }
 
 .contact-button:hover {
