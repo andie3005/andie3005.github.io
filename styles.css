@@ -17,7 +17,7 @@ header nav ul li a {
 
 /* Enlarge and underline the navigation links (<a>) inside <header> on hover */
 header nav ul li a:hover {
-    transform: scale(1.1); /* Enlarge the link text slightly on hover */
+    transform: scale(2); /* Enlarge the link text slightly on hover */
     text-decoration: underline; /* Underline the text on hover */
     transition: transform 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
 }
@@ -40,16 +40,6 @@ nav ul li {
     margin: 0 10px; /* Add horizontal space between the list items */
 }
 
-nav ul li a {
-    color: inherit; /* Inherit the color from the surrounding text (will use default color) */
-}
-
-nav ul li a:hover {
-    transform: scale(1.1); /* Enlarge the link text */
-    text-decoration: underline; /* Add underline on hover */
-    transition: transform 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
-}
-
 /* Section styling */
 section {
     padding: 40px; /* Add 40px padding inside each section */
@@ -67,10 +57,9 @@ section h2:hover {
     transition: transform 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
 }
 
-/* General link styling */
-a {
-    text-decoration: none; /* Remove the underline from all links */
-    color: inherit; /* Inherit the color from the surrounding text */
+/* Visited link styling */
+a:visited {
+    color: inherit; /* Keeps the original color after being clicked */
 }
 
 /* Gallery styling */
