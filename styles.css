@@ -30,6 +30,12 @@ nav ul li {
 nav ul li a {
     text-decoration: none; /* Remove underline from the links */
     color: inherit; /* Inherit the color from the surrounding text (will use default color) */
+    transition: transform 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
+}
+
+nav ul li a:hover {
+    transform: scale(1.1); /* Enlarge the link text */
+    text-decoration: underline; /* Add underline on hover */
 }
 
 /* Section styling */
