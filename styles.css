@@ -96,7 +96,7 @@ a:visited {
     display: inline-block; /* Make the contact button behave like a block element while still inline */
     padding: 10px 20px; /* Add 10px top-bottom and 20px left-right padding */
     background-color: blue; /* Blue background for the button */
-    color: white; /* White text color */
+    color: white !important;/* Force white text color */
     text-decoration: none; /* Remove underline from the link */
     border-radius: 5px; /* Rounded corners for the button */
     font-size: 1.1rem; /* Slightly larger text size */
