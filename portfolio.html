@@ -10,7 +10,7 @@
     <div id="header-container"></div>
 
     
-<section id="portfolio">
+<section id="gear">
     <h2>My Gear</h2>
     <p>This is a semi-comprehensive list (so far) of some of the main gear I use to capture most of the shots taken on display here:</p>
     <p><strong>Camera:</strong> Canon EOS 90d</p>
@@ -25,6 +25,19 @@
         <li>GoPro Hero7 Black</li>
         <li>DJI Mavic 2 Pro</li>
     </ul>
+    <!-- Carousel near the Gear Section -->
+    <div class="carousel-section">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="image1.jpg" alt="Gear Image 1">
+                <img src="image2.jpg" alt="Gear Image 2">
+                <img src="image3.jpg" alt="Gear Image 3">
+            </div>
+            <button class="carousel-btn prev" onclick="prevSlide()">&#8249;</button>
+            <button class="carousel-btn next" onclick="nextSlide()">&#8250;</button>
+        </div>
+    </div>
+</section>
 </section>
     
 <section id="portfolio">
@@ -49,6 +62,25 @@
         </div>
     
     </section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="gallery1.jpg" alt="Gallery Image 1" onclick="openModal(0)">
+        <img src="gallery2.jpg" alt="Gallery Image 2" onclick="openModal(1)">
+        <img src="gallery3.jpg" alt="Gallery Image 3" onclick="openModal(2)">
+        <!-- Add more images as needed -->
+    </div>
+
+    <!-- Modal for Enlarged Image Carousel -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-btn prev" onclick="prevModalSlide()">&#8249;</button>
+            <img id="modalImage" src="" alt="Enlarged Image">
+            <button class="modal-btn next" onclick="nextModalSlide()">&#8250;</button>
+        </div>
+    </div>
+</section>
     
 
  <div id="footer-container"></div>
