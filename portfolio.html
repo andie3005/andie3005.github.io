@@ -32,4 +32,89 @@
                     <a href="images/Canon90d1.jpg" target="_blank">
                         <img src="images/Canon90d1.jpg" alt="Canon EOS 90D - Front View">
                     </a>
-                    <a
+                    <a href="images/Canon90d2.jpg" target="_blank">
+                        <img src="images/Canon90d2.jpg" alt="Canon EOS 90D - Back View">
+                    </a>
+                    <a href="images/Canon90d3.jpg" target="_blank">
+                        <img src="images/Canon90d3.jpg" alt="Canon EOS 90D - Side View">
+                    </a>
+                    <a href="images/Canon90d4.jpg" target="_blank">
+                        <img src="images/Canon90d4.jpg" alt="Canon EOS 90D - Lens Close-Up">
+                    </a>
+                    <a href="images/Canon24.jpg" target="_blank">
+                        <img src="images/Canon24.jpg" alt="Canon EF-S 24mm f/2.8 STM">
+                    </a>
+                    <a href="images/Canon50.jpg" target="_blank">
+                        <img src="images/Canon50.jpg" alt="Canon EF 50mm f/1.8 STM">
+                    </a>
+                    <a href="images/Canon70300.jpg" target="_blank">
+                        <img src="images/Canon70300.jpg" alt="Canon EF 70-300mm f/4-5.6 IS II USM">
+                    </a>
+                </div>
+                <button class="carousel-btn prev" onclick="prevSlide()">&#8249;</button>
+                <button class="carousel-btn next" onclick="nextSlide()">&#8250;</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Add a watermarked folder of the portfolio here.</p>
+        <p>Below are some of the subjects that caught my eye and I thought were worth displaying.</p>
+        
+        <div class="gallery">
+            <a href="images/photo1.jpg" target="_blank">
+                <img src="images/photo1_thumb.jpg" alt="Photo 1">
+            </a>
+            <a href="images/photo2.jpg" target="_blank">
+                <img src="images/photo2_thumb.jpg" alt="Photo 2">
+            </a>
+            <a href="images/photo3.jpg" target="_blank">
+                <img src="images/photo3_thumb.jpg" alt="Photo 3">
+            </a>
+            <a href="images/photo4.jpg" target="_blank">
+                <img src="images/photo4_thumb.jpg" alt="Photo 4">
+            </a>
+            <!-- Add more photo links here -->
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="gallery1.jpg" alt="Gallery Image 1" onclick="openModal(0)">
+            <img src="gallery2.jpg" alt="Gallery Image 2" onclick="openModal(1)">
+            <img src="gallery3.jpg" alt="Gallery Image 3" onclick="openModal(2)">
+            <!-- Add more images as needed -->
+        </div>
+
+        <!-- Modal for Enlarged Image Carousel -->
+        <div id="imageModal" class="modal">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="modal-btn prev" onclick="prevModalSlide()">&#8249;</button>
+                <img id="modalImage" src="" alt="Enlarged Image">
+                <button class="modal-btn next" onclick="nextModalSlide()">&#8250;</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                });
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html>
