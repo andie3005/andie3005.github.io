@@ -9,113 +9,27 @@
 <body>
     <div id="header-container"></div>
 
-    
-<section id="gear">
-    <h2>My Gear</h2>
-    <p>This is a semi-comprehensive list (so far) of some of the main gear I use to capture most of the shots taken on display here:</p>
-    <p><strong>Camera:</strong> Canon EOS 90d</p>
-    <p><strong>Lenses:</strong></p>
-    <ul>
-        <li>Canon EF 70-300mm f/4-5.6 IS II USM</li>
-        <li>Canon EF 50mm f/1.8 STM</li>
-        <li>Canon EF-S 24mm f/2.8 STM</li>
-    </ul>
-    <p><strong>Other:</strong></p>
-    <ul>
-        <li>GoPro Hero7 Black</li>
-        <li>DJI Mavic 2 Pro</li>
-    </ul>
-    <!-- Carousel near the Gear Section -->
-    <div class="carousel-section">
-        <div class="carousel">
-            <div class="carousel-images">
-                <a href="images/Canon90d1.jpg" target="_blank">
-                    <img src="images/Canon90d1.jpg" alt="Gear Image 1">
-                </a>
-                <a href="images/Canon90d2.jpg" target="_blank">
-                    <img src="images/Canon90d2.jpg" alt="Gear Image 2">
-                </a>
-                <a href="images/Canon90d3.jpg" target="_blank">
-                    <img src="images/Canon90d3.jpg" alt="Gear Image 3">
-                </a>
-                <a href="images/Canon90d4.jpg" target="_blank">
-                    <img src="images/Canon90d4.jpg" alt="Gear Image 4">
-                </a>
-                <a href="images/Canon24.jpg" target="_blank">
-                    <img src="images/Canon24.jpg" alt="Gear Image 5">
-                </a>
-                <a href="images/Canon50.jpg" target="_blank">
-                    <img src="images/Canon50.jpg" alt="Gear Image 6">
-                </a>
-                 <a href="images/Canon70300.jpg" target="_blank">
-                    <img src="images/Canon70300.jpg" alt="Gear Image 7">
-                </a>
-            </div>
-            <button class="carousel-btn prev" onclick="prevSlide()">&#8249;</button>
-            <button class="carousel-btn next" onclick="nextSlide()">&#8250;</button>
-        </div>
-    </div>
-</section>
-</section>
-    
-<section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Add watermarked folder of portfolio here.</p>
-    <p>Here below you can find some of the subjects that caught my eye and I thought were adequate enough to display.</p>
-        
-        <div class="gallery">
-            <a href="images/photo1.jpg" target="_blank">
-                <img src="images/photo1.jpg" alt="Photo 1">
-            </a>
-            <a href="images/photo2.jpg" target="_blank">
-                <img src="images/photo2_thumb.jpg" alt="Photo 2">
-            </a>
-            <a href="images/photo3.jpg" target="_blank">
-                <img src="images/photo3_thumb.jpg" alt="Photo 3">
-            </a>
-            <a href="images/photo4.jpg" target="_blank">
-                <img src="images/photo4_thumb.jpg" alt="Photo 4">
-            </a>
-            <!-- Add more photo links here -->
-        </div>
-    
-    </section>
+    <section id="gear">
+        <h2>My Gear</h2>
+        <p>This is a semi-comprehensive list (so far) of some of the main gear I use to capture most of the shots displayed here:</p>
+        <p><strong>Camera:</strong> Canon EOS 90D</p>
+        <p><strong>Lenses:</strong></p>
+        <ul>
+            <li>Canon EF 70-300mm f/4-5.6 IS II USM</li>
+            <li>Canon EF 50mm f/1.8 STM</li>
+            <li>Canon EF-S 24mm f/2.8 STM</li>
+        </ul>
+        <p><strong>Other:</strong></p>
+        <ul>
+            <li>GoPro Hero7 Black</li>
+            <li>DJI Mavic 2 Pro</li>
+        </ul>
 
-<section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-        <img src="gallery1.jpg" alt="Gallery Image 1" onclick="openModal(0)">
-        <img src="gallery2.jpg" alt="Gallery Image 2" onclick="openModal(1)">
-        <img src="gallery3.jpg" alt="Gallery Image 3" onclick="openModal(2)">
-        <!-- Add more images as needed -->
-    </div>
-
-    <!-- Modal for Enlarged Image Carousel -->
-    <div id="imageModal" class="modal" onclick="closeModal()">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="modal-btn prev" onclick="prevModalSlide()">&#8249;</button>
-            <img id="modalImage" src="" alt="Enlarged Image">
-            <button class="modal-btn next" onclick="nextModalSlide()">&#8250;</button>
-        </div>
-    </div>
-</section>
-    
-
- <div id="footer-container"></div>
-
-    <script src="script.js"></script>
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-container').innerHTML = data;
-            });
-
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-container').innerHTML = data;
-            });
-    </script>
-</body>
-</html>
+        <!-- Carousel near the Gear Section -->
+        <div class="carousel-section">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <a href="images/Canon90d1.jpg" target="_blank">
+                        <img src="images/Canon90d1.jpg" alt="Canon EOS 90D - Front View">
+                    </a>
+                    <a
